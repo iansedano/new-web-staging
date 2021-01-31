@@ -16,11 +16,11 @@
 
 						{%- if post.redirect -%}
 							<a class="post-link" href="{{ post.redirect | relative_url }}">
-								{{ post.title | escape }}
+								{{ post.title | escape }} |
 							</a>
 						{%- else -%}
 							<a class="post-link" href="{{ post.url | relative_url }}">
-								{{ post.title | escape }}
+								{{ post.title | escape }} |
 							</a>
 						{%- endif -%}
 
