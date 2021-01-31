@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<h4>Press <kbd>Ctrl</kbd> + <kbd>F</kbd> to search this page.</h2>
+	<h2>{{ page.tag }}</h2>
+	<ul class="post-list">
+		{%- for post in page.posts -%}
+		<li class="post-list-item">
+			{% if post.redirect %}
+				<a href="{{ post.redirect }}">{{ post.title }}</a> (
+				{{- post.date | date_to_string }} | Tags: {{ post | tags -}}
+				)
+			{% else %}
+				<a href="{{ post.url }}">{{ post.title }}</a> (
+				{{- post.date | date_to_string }} | Tags: {{ post | tags -}}
+				)
+			{% endif %}
+		</li>
+		{%- endfor -%}
+	</ul>

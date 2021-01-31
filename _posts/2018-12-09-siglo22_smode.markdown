@@ -1,0 +1,12 @@
+---
+layout: post
+title: Siglo 22 / Smode feat. Royal Society
+date: 2018-12-09
+tags: music hardware video diy programming
+---
+
+
+<div class='embed-container'><iframe src='https://www.youtube.com/embed/G1rwZaYIclA' frameborder='0' allowfullscreen></iframe></div>
+
+<br>
+Pairing up with Antonio Nieto to bring out the visual potential of the music machine proejct.

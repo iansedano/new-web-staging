@@ -1,0 +1,8 @@
+---
+layout: post
+title: Pod Racer
+description: AI programmed for "Coders Strike Back" competition.
+tags: python physics modelling game-dev ai programming
+redirect: https://github.com/iansedano/coders_strike_back
+---
+

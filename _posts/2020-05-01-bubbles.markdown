@@ -1,0 +1,12 @@
+---
+layout: post
+title: Bubbles
+description: bubble visualization with p5.js library
+img: /img/bubbles.jpg
+custom_js:
+- p5
+- bubbles
+tags: art design javascript software p5 programming
+---
+
+<div id="bubbles" style="text-align: center;"></div>

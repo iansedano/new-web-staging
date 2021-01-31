@@ -1,0 +1,9 @@
+---
+layout: post
+title: Lander
+description: AI programmed for competition.
+tags: python physics space modelling game-dev ai programming
+redirect: https://github.com/iansedano/mars_lander
+---
+
+
