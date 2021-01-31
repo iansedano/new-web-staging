@@ -5,26 +5,32 @@
 
 	<div class="post-content">
 		{%- if site.posts.size > 0 -%}
-		<ul class="post-list">
-			{%- for post in site.posts -%}
-			<li class="post-list-item">
-				<!-- {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%} -->
-				{%- assign date_format = "%Y/%m/%d" -%}
-				<span class="post-date">{{ post.date | date: date_format }}</span>
+			<ul class="post-list">
+				{%- for post in site.posts -%}
+					<li class="post-list-item">
+						<!-- {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%} -->
+						{%- assign date_format = "%Y/%m/%d" -%}
+						<span class="post-date">
+							{{ post.date | date: date_format }}
+						</span>
 
-				{%- if post.redirect -%}
-					<a class="post-link" href="{{ post.redirect | relative_url }}">
-						{{ post.title | escape }}
-					</a>
-				{%- else -%}
-					<a class="post-link" href="{{ post.url | relative_url }}">
-						{{ post.title | escape }}
-					</a>
-				{%- endif -%}
-				{%- if site.show_excerpts -%}{{ post.excerpt }}{%- endif -%}
-			</li>
-			{%- endfor -%}
-		</ul>
+						{%- if post.redirect -%}
+							<a class="post-link" href="{{ post.redirect | relative_url }}">
+								{{ post.title | escape }}
+							</a>
+						{%- else -%}
+							<a class="post-link" href="{{ post.url | relative_url }}">
+								{{ post.title | escape }}
+							</a>
+						{%- endif -%}
+
+						<span class="post-description">
+							{{ post.description }}
+						</span>
+						{%- if site.show_excerpts -%}{{ post.excerpt }}{%- endif -%}
+					</li>
+				{%- endfor -%}
+			</ul>
 		{%- endif -%}
 	</div>
 </article>
